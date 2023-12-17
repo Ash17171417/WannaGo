@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "278373246670",
+    "project_id": "fa23-51102-ashish-wanna-go",
+    "storage_bucket": "fa23-51102-ashish-wanna-go.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278373246670:android:e6d7280bda4434b29f529f",
+        "android_client_info": {
+          "package_name": "com.example.wannago"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCn8zboeterEhG7uwGCCakMtAHuMplwMAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

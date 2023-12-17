@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.wannago.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/home_to_rest"
+            app:destination="@+id/restFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/restFragment"
+        android:name="com.example.wannago.rest.RestFragment"
+        android:label="Restaurants"
+        tools:layout="@layout/fragment_rest"/>
+
+    <fragment
+        android:id="@+id/parkFragment"
+        android:name="com.example.wannago.park.ParkFragment"
+        android:label="Parks"
+        tools:layout="@layout/fragment_park">
+
+    <action
+        android:id="@+id/park_to_detail"
+        app:destination="@+id/parkDetailFragment"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/parkDetailFragment"
+        android:name="com.example.wannago.park.ParkDetailFragment"
+        android:label="ParkDetailFragment"
+        tools:layout="@layout/fragment_park_detail">
+
+        <argument
+            android:name="latitude"
+            app:argType="float"/>
+
+        <argument
+            android:name="longitude"
+            app:argType="float"/>
+
+    </fragment>
+
+</navigation>
